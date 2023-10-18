@@ -12,6 +12,18 @@ export const NavBar = () => {
       </NavLink>
       <NavLink
         className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
+        to='/XXX'
+      >
+        XXX
+      </NavLink>
+      <NavLink
+        className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
+        to='/favoritos'
+      >
+        Favoritos
+      </NavLink>
+      <NavLink
+        className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
         to='/informacion'
       >
         Información
