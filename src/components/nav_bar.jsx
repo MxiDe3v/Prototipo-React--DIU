@@ -12,9 +12,9 @@ export const NavBar = () => {
       </NavLink>
       <NavLink
         className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
-        to='/internal'
+        to='/informacion'
       >
-        Página Interna
+        Información
       </NavLink>
     </nav>
   )
