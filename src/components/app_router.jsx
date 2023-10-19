@@ -2,18 +2,20 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import HomePage from '../pages/home'
-import PaginaDeInfo from '../pages/informacion'
+import PaginaDeResultado from '../pages/resultado'
 import PaginaDeFavoritos from '../pages/favorito'
-import PaginaDeXXX from '../pages/xxx'
+import PaginaDeInfo from '../pages/informacion'
+import Detalle from '../pages/detalle'
 
 const AppRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='/XXX' element={<PaginaDeXXX />} />
-        <Route path='/favoritos' element={<PaginaDeFavoritos />} />
+        <Route path='/resultado' element={<PaginaDeResultado />} />
+        <Route path='/favoritos' element={<PaginaDeFavoritos />}/>
         <Route path='/informacion' element={<PaginaDeInfo />} />
+        <Route path='/detalle/:src/:titulo/:descripcion/:url' element={<Detalle />} />
       </Routes>
     </BrowserRouter>
   )
