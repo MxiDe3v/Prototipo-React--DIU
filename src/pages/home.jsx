@@ -1,13 +1,25 @@
 import React from 'react'
 
 import NavBar from '../components/nav_bar'
+import LogoApp from '../assets/Illustration.png'
+import Asynchronous from '../components/search_bar';
+import SearchIcon from '@mui/icons-material/Search';
+import Fab from '@mui/material/Fab';
+import Button from '@mui/material/Button';
 
 export const HomePage = () => {
   return (
     <div className='page'>
-      <h1 className='page__title'>Reciclaje Inteligente</h1>
+      <a href='/'>
+          <img src={LogoApp} height={120} alt='logo app' /><br />
+      </a>
       <NavBar />
-      <h2>Home</h2>
+      <div className='container'>
+        <Asynchronous />
+        <Button href="#">
+          <SearchIcon />
+        </Button>
+      </div>
     </div>
   )
 }

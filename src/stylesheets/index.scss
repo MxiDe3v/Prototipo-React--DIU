@@ -12,7 +12,13 @@ html, body {
   font-family: 'Open Sans', sans-serif;
 }
 
-@media screen and (max-width: 600px) {
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 600px) {
   .page {
     margin-top: 0;
   }
