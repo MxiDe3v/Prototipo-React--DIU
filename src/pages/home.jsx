@@ -2,10 +2,13 @@ import React from 'react'
 
 import NavBar from '../components/nav_bar'
 import LogoApp from '../assets/Illustration.png'
+import Recycle from '../assets/recycle.jpg'
 import Asynchronous from '../components/search_bar';
+import Footer from '../components/footer'
 import SearchIcon from '@mui/icons-material/Search';
-import Fab from '@mui/material/Fab';
 import Button from '@mui/material/Button';
+import CircularProgress from '@mui/material/CircularProgress';
+
 
 export const HomePage = () => {
   return (
@@ -16,10 +19,14 @@ export const HomePage = () => {
       <NavBar />
       <div className='container'>
         <Asynchronous />
-        <Button href="#">
-          <SearchIcon />
+        <Button href='/busqueda'>
+          <SearchIcon  />
         </Button>
       </div>
+      <div className='recycle'>
+        <img className='recycle_image' src={Recycle} height={160} alt='recycle image' />
+      </div>
+      <Footer />
     </div>
   )
 }

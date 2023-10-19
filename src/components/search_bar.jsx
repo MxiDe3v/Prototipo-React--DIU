@@ -45,7 +45,7 @@ export default function Asynchronous() {
   return (
     <Autocomplete
       id="asynchronous-demo"
-      sx={{ width: 400, backgroundColor: 'white'}}
+      sx={{ width: 310, backgroundColor: 'white'}}
       open={open}
       onOpen={() => {
         setOpen(true);
@@ -75,20 +75,21 @@ export default function Asynchronous() {
           }}
         />
       )}
-    />
+    />                   
   );
 }
 
 const comunas = [
-  { title: 'Cerrillos', year: 1994 },
-  { title: 'Conchali', year: 1972 },
-  { title: 'Estacion Central', year: 1974 },
-  { title: 'Macul', year: 2008 },
-  { title: 'Maipu', year: 1957 },
-  { title: "Ñuñoa", year: 1993 },
-  { title: 'Pudahuel', year: 1994 },
-  { title: 'Quilicura', year: 1994 },
-  { title: 'Quinta Normal', year: 1994 },
-  { title: 'Recoleta', year: 1994 },
-  { title: 'Renca', year: 1994 }
+  { title: 'Cerrillos', region: 'Santiago' },
+  { title: 'Conchalí', region: 'Santiago' },
+  { title: 'Estación Central', region: 'Santiago' },
+  { title: 'Macul', region: 'Santiago' },
+  { title: 'Maipú', region: 'Santiago' },
+  { title: "Ñuñoa", region: 'Santiago' },
+  { title: 'Pudahuel', region: 'Santiago' },
+  { title: 'Quilicura', region: 'Santiago' },
+  { title: 'Quinta Normal', region: 'Santiago' },
+  { title: 'Recoleta', region: 'Santiago' },
+  { title: 'Renca', region: 'Santiago' },
+  { title: 'Santiago Centro', region: 'Santiago' }
 ];

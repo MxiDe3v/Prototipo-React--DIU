@@ -18,8 +18,41 @@ html, body {
   align-items: center;
 }
 
-@media screen and (min-width: 600px) {
+.recycle {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.recycle_image {
+  height: 250px;
+  width: auto;
+}
+
+.footer {
+  display: flex;
+  margin: 10px -49px -19px -49px;
+  font-size: 8pt;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6fdacd;
+}
+
+.footer p {
+  padding: 0px 15px;
+}
+
+.footer p span:nth-child(2) {
+  font-style: bold;
+}
+
+@media screen and (max-width: 600px) {
   .page {
     margin-top: 0;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px -49px -19px -49px;;
   }
 }
