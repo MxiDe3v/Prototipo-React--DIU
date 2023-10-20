@@ -1,5 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import Avatar from '@mui/material/Avatar';
+import { deepOrange, deepPurple } from '@mui/material/colors'
+
 
 export const NavBar = () => {
   return (
@@ -8,13 +11,7 @@ export const NavBar = () => {
         className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
         to='/'
       >
-        Página de inicio
-      </NavLink>
-      <NavLink
-        className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
-        to='/resultado'
-      >
-        XXX
+        Inicio
       </NavLink>
       <NavLink
         className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
