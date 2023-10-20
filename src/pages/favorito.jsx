@@ -12,8 +12,8 @@ export const PaginaDeFavoritos = () => {
     padding: '16px',
     textAlign: 'left',
     color: '#000',
-    marginLeft: '10px',
-    marginRight: '10px',
+    marginLeft: '100px',
+    marginRight: '100px',
     marginTop: '10px',
     marginBottom: '10px'
   };

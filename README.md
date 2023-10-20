@@ -1,34 +1,19 @@
-# Test
+# Prototipo IntelliCycle
 
-# frontend-sample-app
-Basic Frontend Development Environment to start an app with Webpack
+## Integrantes
 
-This repo includes `Webpack` to start an environment to build frontend views using `React`.
+- Daniel Parraguez - 
+- Alex Arenas -
+- Brandon Monsalve - 202073545-k
 
-### Requirements
+### Requerimientos
 - Node >= 16.13.1
 - npm >= 8.1.2
 
-### Quick start
+### Inicio
 
-Install dependences
+Instalar depedencias con: npm install
 
-```
-npm install
-```
+Iniciar proyecto con: npm run dev
 
-Launch environment
-
-```
-npm run dev
-```
-
-Now you can open http://localhost:5050
-
-### Packages included
-- [Webpack](https://webpack.js.org/)
-- [React Router](https://reactrouter.com/en/main)
-- [Material UI](https://mui.com/material-ui/getting-started/usage/)
-
-### About stylesheets
-- Sample stylesheets were written using the [BEM](https://getbem.com/) structure
+Abrir proyecto con: http://localhost:5050

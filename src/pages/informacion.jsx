@@ -15,15 +15,15 @@ const ContenedorInfo = ({ titulo, contenido, imagenSrc }) => {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    padding: '0 20px'
+    padding: '0 -1000px'
   };
 
   const paperStyle = {
     padding: '16px',
     textAlign: 'left',
     color: '#000', // Cambia el color del texto según tus preferencias
-    marginLeft: '10px',
-    marginRight: '10px',
+    marginLeft: '100px',
+    marginRight: '100px',
     marginTop: '10px',
     marginBottom: '10px'
   };
@@ -35,6 +35,7 @@ const ContenedorInfo = ({ titulo, contenido, imagenSrc }) => {
 
   const textContainerStyle = {
     flex: 1,  // El texto ocupa el espacio restante
+    marginLeft: '-500px',
   };
 
   return (
