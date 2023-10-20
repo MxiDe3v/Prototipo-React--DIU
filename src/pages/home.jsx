@@ -19,7 +19,7 @@ export const HomePage = () => {
       <NavBar />
       <div className='container'>
         <Asynchronous />
-        <Button href='/busqueda'>
+        <Button href='/resultado'>
           <SearchIcon  />
         </Button>
       </div>
