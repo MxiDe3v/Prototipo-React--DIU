@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Button, Grid, Paper, Typography } from '@mui/material';
 import NavBar from '../components/nav_bar';
-import PruebaImagen from '../assets/prueba.png'
+import PruebaImagen from '../assets/favorito_test.jpg'
+import Logo from "../assets/logo.png"
 
 export const PaginaDeFavoritos = () => {
 
@@ -21,9 +22,10 @@ export const PaginaDeFavoritos = () => {
     // Aquí puedes agregar la lógica para añadir un contenedor a la lista de favoritos
     // Simularemos esto añadiendo un contenedor de prueba
     const contenedorPrueba = {
-      nombre: 'Contenedor de Prueba',
-      lugar: 'Ubicación de Prueba',
+      nombre: 'Contenedor de Santo Domingo & Teatinos',
+      lugar: 'Santo domingo con Teatinos Santiago centro',
       disponibilidad: 'Disponible',
+      tipo: 'Rojo',
       imagenSrc: PruebaImagen, // Añade la URL de la imagen de prueba
     };
 
@@ -32,7 +34,7 @@ export const PaginaDeFavoritos = () => {
 
   return (
     <div className='page'>
-      <h1 className='page__title'>Reciclaje Inteligente</h1>
+      <img src={Logo} style={{ maxWidth: '20%', height: 'auto' }} />
       <NavBar />
       <div style={{ textAlign: 'center' }}>
         <h2>Favoritos</h2>
@@ -59,6 +61,7 @@ export const PaginaDeFavoritos = () => {
               <Typography variant="h4">{contenedor.nombre}</Typography>
               <Typography variant="body1">Lugar: {contenedor.lugar}</Typography>
               <Typography variant="body1">Disponibilidad: {contenedor.disponibilidad}</Typography>
+              <Typography variant="body1">Tipo de contenedor: {contenedor.tipo}</Typography>
             </Grid>
           </Grid>
         </Paper>
