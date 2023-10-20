@@ -8,6 +8,8 @@ import { faHeart as fasHeart } from '@fortawesome/free-solid-svg-icons'
 import { faMap } from '@fortawesome/free-regular-svg-icons'
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons'
 import { faClock } from '@fortawesome/free-regular-svg-icons'
+import LogoApp from '../assets/Illustration.png'
+import Footer from '../components/footer'
 
 export const Detalle = () => {
   let { src, titulo, descripcion, url } = useParams()
@@ -20,7 +22,9 @@ export const Detalle = () => {
   }
   return (
     <div className='page'>
-      <h1 className='page__title'>Reciclaje Inteligente</h1>
+      <a href='/'>
+          <img src={LogoApp} height={120} alt='logo app' /><br />
+      </a>
       <NavBar />
       <div style={{display: 'flex', justifyContent: 'center', alignItems:'center'}}>
         <h2>{titulo}</h2>
@@ -53,6 +57,7 @@ export const Detalle = () => {
         <FontAwesomeIcon icon={faMap}/>
         <p style={{width: '60%', height: 'auto', marginLeft: '10px'}}>Como llegar</p>
       </a>
+      <Footer />
     </div>
   )
 }

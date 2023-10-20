@@ -3,11 +3,15 @@ import NavBar from '../components/nav_bar'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRoute } from '@fortawesome/free-solid-svg-icons'
+import LogoApp from '../assets/Illustration.png'
+import Footer from '../components/footer'
 
 export const PaginaDeResultado = () => {
   return (
     <div className='page'>
-      <h1 className='page__title'>Reciclaje Inteligente</h1>
+      <a href='/'>
+          <img src={LogoApp} height={120} alt='logo app' /><br />
+      </a>
       <NavBar />
       <h2>Resultados</h2>
       <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
@@ -28,6 +32,7 @@ export const PaginaDeResultado = () => {
         '¿Qué se puede reciclar aquí?: cartón corrugado, cartón dúplex, diarios, revistas, tetra pak, papel blanco, latas, botellas PET y latas de conserva. Horarios: Lunes a Sábado (09 AM a 18 PM) / Domingos y festivos cerrado', 
         {src:'https://goo.gl/maps/MNqSncGJgrUHjdbg8'})}
       </div>
+      <Footer />
     </div>
   )
 }

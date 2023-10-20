@@ -7,7 +7,7 @@ import Asynchronous from '../components/search_bar';
 import Footer from '../components/footer'
 import SearchIcon from '@mui/icons-material/Search';
 import Button from '@mui/material/Button';
-import CircularProgress from '@mui/material/CircularProgress';
+//import CircularProgress from '@mui/material/CircularProgress';
 
 
 export const HomePage = () => {
