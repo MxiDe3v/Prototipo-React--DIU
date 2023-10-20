@@ -2,8 +2,8 @@
 
 ## Integrantes
 
-- Daniel Parraguez - 
-- Alex Arenas -
+- Daniel Parraguez - 202073542-5
+- Maximiliano Tapia -
 - Brandon Monsalve - 202073545-k
 
 ### Requerimientos
