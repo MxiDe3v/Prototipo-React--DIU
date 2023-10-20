@@ -8,6 +8,7 @@ import ContenedorGrisImagen from '../assets/contenedor_gris.png';
 import ContenedorRojoImagen from '../assets/contenedor_rojo.png';
 import ContenedorNaranjoImagen from '../assets/contenedor_naranjo.png';
 import Logo from "../assets/logo.png"
+import Footer from '../components/footer'
 
 const ContenedorInfo = ({ titulo, contenido, imagenSrc }) => {
   // Estilos en línea para los elementos
@@ -35,7 +36,8 @@ const ContenedorInfo = ({ titulo, contenido, imagenSrc }) => {
 
   const textContainerStyle = {
     flex: 1,  // El texto ocupa el espacio restante
-    marginLeft: '-500px',
+    marginLeft: '-250px',
+    textAlign: 'justify',
   };
 
   return (
@@ -56,11 +58,10 @@ const ContenedorInfo = ({ titulo, contenido, imagenSrc }) => {
 export const PaginaDeInfo = () => {
   return (
     <div className='page'>
-      <img src={Logo} style={{ maxWidth: '20%', height: 'auto' }} />
+      <a href='/'>
+          <img src={Logo} height={120} alt='logo app' /><br />
+      </a>
       <NavBar />
-      <div style={{ textAlign: 'center' }}>
-        <h2>Información</h2>
-      </div>
       
       <ContenedorInfo
         titulo="Contenedor Azul"
@@ -121,7 +122,7 @@ export const PaginaDeInfo = () => {
         Utiliza el compost producido en jardines o para fertilizar plantas."
         imagenSrc={ContenedorNaranjoImagen}
       />
-
+    <Footer/>
     </div>
   )
 }

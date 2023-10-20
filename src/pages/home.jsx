@@ -17,7 +17,7 @@ export const HomePage = () => {
           <img src={LogoApp} height={120} alt='logo app' /><br />
       </a>
       <NavBar />
-      <div className='container'>
+      <div className='container' >
         <Asynchronous />
         <Button href='/resultado'>
           <SearchIcon  />

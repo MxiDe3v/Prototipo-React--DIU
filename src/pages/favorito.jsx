@@ -3,6 +3,7 @@ import { Button, Grid, Paper, Typography } from '@mui/material';
 import NavBar from '../components/nav_bar';
 import PruebaImagen from '../assets/favorito_test.jpg'
 import Logo from "../assets/logo.png"
+import Footer from '../components/footer'
 
 export const PaginaDeFavoritos = () => {
 
@@ -34,7 +35,9 @@ export const PaginaDeFavoritos = () => {
 
   return (
     <div className='page'>
-      <img src={Logo} style={{ maxWidth: '20%', height: 'auto' }} />
+      <a href='/'>
+          <img src={Logo} height={120} alt='logo app' /><br />
+      </a>
       <NavBar />
       <div style={{ textAlign: 'center' }}>
         <h2>Favoritos</h2>
@@ -54,11 +57,11 @@ export const PaginaDeFavoritos = () => {
               <img
                 src={contenedor.imagenSrc}
                 alt={`Contenedor de ${contenedor.nombre}`}
-                style={{ maxWidth: '20%', height: 'auto' }}
+                style={{ maxWidth: '50%', height: 'auto', marginLeft: '25%' }}
               />
             </Grid>
             <Grid item xs={12} md={6}>
-              <Typography variant="h4">{contenedor.nombre}</Typography>
+              <Typography variant="h4" style={{fontSize: '30px'}}>{contenedor.nombre}</Typography>
               <Typography variant="body1">Lugar: {contenedor.lugar}</Typography>
               <Typography variant="body1">Disponibilidad: {contenedor.disponibilidad}</Typography>
               <Typography variant="body1">Tipo de contenedor: {contenedor.tipo}</Typography>
@@ -66,6 +69,7 @@ export const PaginaDeFavoritos = () => {
           </Grid>
         </Paper>
       ))}
+    <Footer />
     </div>
   );
 }

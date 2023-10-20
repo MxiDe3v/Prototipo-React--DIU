@@ -1,12 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import Avatar from '@mui/material/Avatar';
-import { deepOrange, deepPurple } from '@mui/material/colors'
 
 
 export const NavBar = () => {
   return (
-    <nav className='nav-bar'>
+    <nav className='nav-bar' style={{backgroundColor: '#9DF9EF'}}>
+      
       <NavLink
         className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
         to='/'
