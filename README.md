@@ -3,7 +3,7 @@
 ## Integrantes
 
 - Daniel Parraguez - 202073542-5
-- Maximiliano Tapia -
+- Maximiliano Tapia - 202073552-2
 - Brandon Monsalve - 202073545-k
 
 ### Requerimientos
