@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 export const NavBar = () => {
   return (
-    <nav className='nav-bar' style={{backgroundColor: '#9DF9EF'}}>
+    <nav className='nav-bar'>
       
       <NavLink
         className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}

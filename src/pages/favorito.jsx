@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, Grid, Paper, Typography } from '@mui/material';
 import NavBar from '../components/nav_bar';
 import PruebaImagen from '../assets/favorito_test.jpg'
 import Logo from "../assets/logo.png"
 import Footer from '../components/footer'
+import ClipLoader from "react-spinners/ClipLoader";
 
 export const PaginaDeFavoritos = () => {
 
@@ -16,7 +17,8 @@ export const PaginaDeFavoritos = () => {
     marginLeft: '100px',
     marginRight: '100px',
     marginTop: '10px',
-    marginBottom: '10px'
+    marginBottom: '10px',
+    backgroundColor: '#336b05'
   };
 
   const agregarContenedorTemporal = () => {
@@ -33,19 +35,29 @@ export const PaginaDeFavoritos = () => {
     setContenedoresFavoritos([...contenedoresFavoritos, contenedorPrueba]);
   };
 
+  // Intente hacer un loading pero no funciona xd
+  const [loading, setLoading] = useState(false)
+  useEffect(() => {
+	setLoading(true)
+    setTimeout(() => {
+    setLoading(false)
+		}, 3000);
+	}, [])
+
   return (
     <div className='page'>
       <a href='/'>
           <img src={Logo} height={120} alt='logo app' /><br />
       </a>
       <NavBar />
-      <div style={{ textAlign: 'center' }}>
+
+      <div style={{ textAlign: 'center', color:'#217c61', fontWeight: 'bold'}}>
         <h2>Favoritos</h2>
       </div>
 
       <div style={{textAlign: 'center', marginTop: '10px'}}>
-        <Button variant='contained' onClick={agregarContenedorTemporal} >
-          Agregar Contenedor Temporal
+        <Button style={{backgroundColor: '#336b05'}} variant='contained' onClick={agregarContenedorTemporal} >
+          Agregar Favorito Temporal
         </Button>
       </div>
 
@@ -61,10 +73,10 @@ export const PaginaDeFavoritos = () => {
               />
             </Grid>
             <Grid item xs={12} md={6}>
-              <Typography variant="h4" style={{fontSize: '30px'}}>{contenedor.nombre}</Typography>
-              <Typography variant="body1">Lugar: {contenedor.lugar}</Typography>
-              <Typography variant="body1">Disponibilidad: {contenedor.disponibilidad}</Typography>
-              <Typography variant="body1">Tipo de contenedor: {contenedor.tipo}</Typography>
+              <Typography variant="h4" style={{color: '#dde6a1', fontSize: '30px', fontWeight: 'bold'}}>{contenedor.nombre}</Typography>
+              <Typography variant="body1" style={{color: '#dde6a1'}}>Lugar: {contenedor.lugar}</Typography>
+              <Typography variant="body1" style={{color: '#dde6a1'}}>Estado: {contenedor.disponibilidad}</Typography>
+              <Typography variant="body1" style={{color: '#dde6a1'}}>Tipo de contenedor: {contenedor.tipo}</Typography>
             </Grid>
           </Grid>
         </Paper>
