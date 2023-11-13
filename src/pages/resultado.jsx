@@ -9,9 +9,6 @@ import Footer from '../components/footer'
 export const PaginaDeResultado = () => {
   return (
     <div className='page'>
-      <a href='/'>
-          <img src={LogoApp} height={120} alt='logo app' /><br />
-      </a>
       <NavBar />
       <h2 style={{color: '#217c61', marginLeft: '20px'}}>Resultados</h2>
       <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>

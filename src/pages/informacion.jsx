@@ -18,10 +18,12 @@ const ContenedorInfo = ({ titulo, contenido, imagenSrc }) => {
     alignItems: 'center',
     padding: '0 -1000px',
     backgroundColor: '#336b05',
+    borderRadius: '30px',
+    border: '1px solid #112a26'
   };
 
   const paperStyle = {
-    backgroundColor: '#DDE6A1',
+    backgroundColor: '#FBFFE2',
     textAlign: 'left',
     color: '#112a26', // Cambia el color del texto según tus preferencias
     marginLeft: '100px',
@@ -61,9 +63,6 @@ const ContenedorInfo = ({ titulo, contenido, imagenSrc }) => {
 export const PaginaDeInfo = () => {
   return (
     <div className='page'>
-      <a href='/'>
-          <img src={Logo} height={120} alt='logo app' /><br />
-      </a>
       <NavBar />
       
       <ContenedorInfo

@@ -22,10 +22,9 @@ export const Detalle = () => {
   }
   return (
     <div className='page'>
-      <a href='/'>
-          <img src={LogoApp} height={120} alt='logo app' /><br />
-      </a>
       <NavBar />
+
+      {/* Titulo de resultado y boton para favoritos */}
       <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '10px 0px'}}>
         <h2 style={{textAlign: 'center', fontWeight: 'bold'}}>{titulo}</h2>
         <Button onClick={handleClick} variant={isFavorite ? 'primary' : 'secondary'} style={{
@@ -41,16 +40,21 @@ export const Detalle = () => {
           <FontAwesomeIcon icon={isFavorite ? fasHeart : farHeart} color={isFavorite ? 'red' : 'grey'} size='2x'/>
         </Button>
       </div>
+      {/* Titulo de resultado y boton para favoritos */}
+
+      {/* Informacion de resultado */}
       <div style={{display: 'flex', justifyContent: 'center', alignItems:'center'}}>
-        <img src={src} style={{ width: '60%', height: 'auto', marginLeft: '50px', padding: '20px'}} alt={titulo} />
+        <img src={src} style={{ width: '60%', height: 'auto', marginLeft: '100px', padding: '20px'}} alt={titulo} />
         <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
-          <p style={{width: '60%', height: 'auto', marginLeft:'10px'}}> <FontAwesomeIcon icon={faCircleInfo}/> {strArray[0]}</p>
-          <p style={{width: '60%', height: 'auto', marginLeft:'10px'}}> <FontAwesomeIcon icon={faClock}/> {strArray[1]}</p>
+          <p style={{width: '60%', height: 'auto', marginLeft:'0px'}}> <FontAwesomeIcon icon={faCircleInfo}/> {strArray[0]}</p>
+          <p style={{width: '60%', height: 'auto', marginLeft:'0px'}}> <FontAwesomeIcon icon={faClock}/> {strArray[1]}</p>
           <a href={url} target='_blank' rel='noopener noreferrer' style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-            <p style={{width: '100%', height: 'auto', backgroundColor: '#94c132', padding: '20px', borderRadius: '25px', color: '#112a26', fontWeight: 'bold'}}> <FontAwesomeIcon icon={faMap}/> Cómo llegar</p>
+            <p style={{width: '100%', height: 'auto', backgroundColor: '#94c132', padding: '20px', borderRadius: '25px', color: '#112a26', fontWeight: 'bold'}}> <FontAwesomeIcon icon={faMap}/>  Cómo llegar</p>
           </a>
         </div>
       </div>
+      {/* Informacion de resultado */}
+
       <Footer />
     </div>
   )

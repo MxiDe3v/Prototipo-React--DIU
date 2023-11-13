@@ -6,7 +6,11 @@
   border-radius: 10px;
 
   &--active {
-    background: #94c132;
+    background: #112a26;
     color: white;
   }
+}
+
+.nav-bar__link:hover {
+  background: #217c61;
 }

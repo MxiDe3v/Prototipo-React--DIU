@@ -4,7 +4,6 @@ import NavBar from '../components/nav_bar';
 import PruebaImagen from '../assets/favorito_test.jpg'
 import Logo from "../assets/logo.png"
 import Footer from '../components/footer'
-import ClipLoader from "react-spinners/ClipLoader";
 
 export const PaginaDeFavoritos = () => {
 
@@ -35,31 +34,21 @@ export const PaginaDeFavoritos = () => {
     setContenedoresFavoritos([...contenedoresFavoritos, contenedorPrueba]);
   };
 
-  // Intente hacer un loading pero no funciona xd
-  const [loading, setLoading] = useState(false)
-  useEffect(() => {
-	setLoading(true)
-    setTimeout(() => {
-    setLoading(false)
-		}, 3000);
-	}, [])
-
   return (
     <div className='page'>
-      <a href='/'>
-          <img src={Logo} height={120} alt='logo app' /><br />
-      </a>
       <NavBar />
 
       <div style={{ textAlign: 'center', color:'#217c61', fontWeight: 'bold'}}>
         <h2>Favoritos</h2>
       </div>
 
+      {/* Boton para agregar favoritos */}
       <div style={{textAlign: 'center', marginTop: '10px'}}>
         <Button style={{backgroundColor: '#336b05'}} variant='contained' onClick={agregarContenedorTemporal} >
           Agregar Favorito Temporal
         </Button>
       </div>
+      {/* Boton para agregar favoritos */}
 
       {/* Mostrar contenedores favoritos */}
       {contenedoresFavoritos.map((contenedor, index) => (
@@ -81,6 +70,8 @@ export const PaginaDeFavoritos = () => {
           </Grid>
         </Paper>
       ))}
+      {/* Mostrar contenedores favoritos */}
+
     <Footer />
     </div>
   );
