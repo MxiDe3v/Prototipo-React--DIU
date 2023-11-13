@@ -67,54 +67,45 @@ export const PaginaDeInfo = () => {
       
       <ContenedorInfo
         titulo="Contenedor Azul"
-        contenido="Destinados a papel y cartón. Es importante que estos materiales estén limpios y plegados para facilitar el proceso de reciclaje. 
-        
-        Pasos para el Reciclaje:
-        Asegúrate de que el papel y el cartón estén libres de contaminantes como alimentos o productos químicos.
-        Pliega los cartones y recortes de papel para ahorrar espacio en el contenedor.
-        Evita desechar papeles encerados, papel higiénico o papel de aluminio en este contenedor."
+        contenido="Contenedores azules para papel y cartón. 
+        Asegúrate de que estén limpios y plegados para facilitar el reciclaje. 
+        Elimina contaminantes como alimentos y químicos. 
+        Pliega cartones y papel para ahorrar espacio. 
+        No incluyas papeles encerados, papel higiénico o papel de aluminio."
         imagenSrc={ContenedorAzulImagen}
       />
 
       <ContenedorInfo
         titulo="Contenedor Verde"
-        contenido="Destinados para el vidrio. Este material debe estar enjuagado y seco antes de depositarlo en el contenedor. 
-
-        Pasos para el Reciclaje:
-        Enjuaga bien los envases de vidrio para eliminar residuos.
-        Retira las tapas y etiquetas de los envases antes de reciclar.
+        contenido="Contenedores verdes para vidrio. 
+        Enjuaga y seca el vidrio antes de depositarlo para eliminar residuos.
+        Retira tapas y etiquetas antes de reciclar.
         No incluyas vidrio plano, cerámica o cristal en este contenedor."
         imagenSrc={ContenedorVerdeImagen}
       />
 
       <ContenedorInfo
         titulo="Contenedor Rojo"
-        contenido="Destinados a residuos peligrosos como baterías, pilas, aceites o medicamentos. Estos materiales deben ser gestionados con cuidado debido a sus características peligrosas. 
-        
-        Pasos para el Reciclaje:
-        Almacenar baterías y pilas en contenedores específicos para su reciclaje.
-        Devolver medicamentos no utilizados a las farmacias para su eliminación segura.
-        Reciclar aceites a través de programas municipales o centros de reciclaje designados."
+        contenido="Contenedores rojos para residuos peligrosos como baterías, pilas, aceites o medicamentos. Estos materiales requieren gestión cuidadosa debido a sus características peligrosas. 
+        Almacena baterías y pilas sin agujeros o deformidades.
+        Mantener medicamentos separados para evitar reacciones.
+        Recicla aceites no quemados en contenedores específicos."
         imagenSrc={ContenedorRojoImagen}
       />
 
       <ContenedorInfo
         titulo="Contenedor Amarillo"
-        contenido="Destinados a plásticos. Estos deben estar enjuagados y secos antes de depositarlos en el contenedor. 
-        
-        Pasos para el Reciclaje: 
-        Lava y enjuaga los envases plásticos para eliminar cualquier residuo.
-        Separa los tapones y las etiquetas de los envases antes de reciclar.
+        contenido="Contenedores amarillos para plásticos. 
+        Lava y seca los envases plásticos antes de depositarlos para eliminar los residuos.
+        Separa tapones y etiquetas antes de reciclar.
         Evita desechar plásticos no reciclables, como juguetes o utensilios de cocina."
         imagenSrc={ContenedorAmarilloImagen}
       />
 
       <ContenedorInfo
         titulo="Contenedor Gris"
-        contenido="Destinados a metales. Estos deben estar enjuagados sin residuos y secos. 
-        
-        Pasos para el Reciclaje:
-        Asegúrate de que los envases metálicos estén limpios y libres de alimentos.
+        contenido="Contenedores grises para metales. 
+        Asegúrate de que los envases metálicos estén limpios y libres de alimentos o residuos.
         Separa los diferentes tipos de metales, como aluminio y acero, para facilitar el reciclaje.
         Evita desechar objetos metálicos grandes o contaminados con productos químicos."
         imagenSrc={ContenedorGrisImagen}
@@ -122,11 +113,9 @@ export const PaginaDeInfo = () => {
 
       <ContenedorInfo
         titulo="Contenedor Naranjo"
-        contenido="Destinado a restos de alimentos como pieles de frutas, espinas de pescado, plantas, cáscaras de huevo o posos.
-        
-        Pasos para el Reciclaje:
+        contenido="Contenedor para restos de alimentos destinados a compost. Incluye pieles de frutas, espinas de pescado, plantas, cáscaras de huevo y posos. Estos restos se utilizarán para hacer compost, un fertilizante y generador de energía.
         Separa los restos de alimentos de otros desechos no compostables.
-        No incluyas plásticos, papeles o materiales no orgánicos en este contenedor.
+        No incluyas plásticos, papeles ni materiales no orgánicos en este contenedor.
         Utiliza el compost producido en jardines o para fertilizar plantas."
         imagenSrc={ContenedorNaranjoImagen}
       />
