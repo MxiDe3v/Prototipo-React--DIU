@@ -7,9 +7,10 @@ export const NavBar = () => {
     <nav className='nav-bar'>
       
       <a href='/'>
-          <img src={LogoApp} height={120} alt='logo app' /><br />
+          <img src={LogoApp} height={100} alt='logo app' /><br />
       </a>
 
+      <div style={{display: 'flex', justifyContent: 'center'}}>
       <NavLink
         className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
         to='/'
@@ -28,6 +29,7 @@ export const NavBar = () => {
       >
         Información
       </NavLink>
+      </div>
     </nav>
   )
 }

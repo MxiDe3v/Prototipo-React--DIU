@@ -3,14 +3,16 @@ import NavBar from '../components/nav_bar'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRoute } from '@fortawesome/free-solid-svg-icons'
-import LogoApp from '../assets/Illustration.png'
 import Footer from '../components/footer'
 
 export const PaginaDeResultado = () => {
   return (
     <div className='page'>
       <NavBar />
-      <h2 style={{color: '#217c61', marginLeft: '20px'}}>Resultados</h2>
+      <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <a href='/' style={{color: '#217c61', marginLeft: '-25rem', marginRight: '45rem', position: 'absolute', fontSize: '14pt', textDecoration: 'underline'}}>Volver</a>
+        <h2 style={{color: '#217c61'}}>Resultado: 4 contenedores</h2>
+      </div>
       <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
         {Contenedor({src:"https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=4tbWhmLSSrNXLdUJguywog&cb_client=search.gws-prod.gps&w=408&h=240&yaw=354.22885&pitch=0&thumbfov=100"}, 
         'Santo Domingo con Teatinos, Santiago Centro', 

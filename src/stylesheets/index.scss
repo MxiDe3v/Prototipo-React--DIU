@@ -36,7 +36,7 @@ a {
 
 .footer {
   display: flex;
-  margin: 45px 0px -50px 0px;
+  margin: 3.4rem 0px -15rem 0px;
   font-size: 8pt;
   justify-content: space-between;
   align-items: center;
@@ -57,10 +57,24 @@ a {
   .page {
     margin-top: 0;
   }
+  .recycle {
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-right: 0;
+  }
   .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px -49px -19px -49px;;
+    margin: 4rem 0px -15rem 0px;
+  }
+  .nav-bar {
+    font-size: 9pt;
+  }
+  .nav-bar a {
+    margin-right: 20px;
+  }
+  .nav-bar a img {
+    height: 70px;
   }
 }

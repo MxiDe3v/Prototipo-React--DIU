@@ -8,7 +8,6 @@ import { faHeart as fasHeart } from '@fortawesome/free-solid-svg-icons'
 import { faMap } from '@fortawesome/free-regular-svg-icons'
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons'
 import { faClock } from '@fortawesome/free-regular-svg-icons'
-import LogoApp from '../assets/Illustration.png'
 import Footer from '../components/footer'
 
 export const Detalle = () => {
@@ -26,6 +25,7 @@ export const Detalle = () => {
 
       {/* Titulo de resultado y boton para favoritos */}
       <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '10px 0px'}}>
+        <a href='/resultado' style={{color: '#217c61', marginLeft: '-25rem', marginRight: '45rem', position: 'absolute', fontSize: '14pt', textDecoration: 'underline'}}>Volver</a>
         <h2 style={{textAlign: 'center', fontWeight: 'bold'}}>{titulo}</h2>
         <Button onClick={handleClick} variant={isFavorite ? 'primary' : 'secondary'} style={{
           height: '50px',
