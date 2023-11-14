@@ -74,59 +74,37 @@ export const PaginaDeInfo = () => {
       
       <ContenedorInfo
         titulo="Contenedor Azul"
-        contenido={`Contenedores azules para papel y cartón.\n 
-        Asegúrate de que estén limpios y plegados para facilitar el reciclaje.\n 
-        Elimina contaminantes como alimentos y químicos.\n 
-        Pliega cartones y papel para ahorrar espacio.\n 
-        No incluyas papeles encerados, papel higiénico o papel de aluminio.`}
+        contenido={`Contenedores azules para papel y cartón.\nAsegúrate de que estén limpios y plegados para facilitar el reciclaje.\nElimina contaminantes como alimentos y químicos.\nPliega cartones y papel para ahorrar espacio.\nNo incluyas papeles encerados, papel higiénico o papel de aluminio.`}
         imagenSrc={ContenedorAzulImagen}
       />
 
       <ContenedorInfo
         titulo="Contenedor Verde"
-        contenido={`Contenedores verdes para vidrio.\n  
-        Enjuaga y seca el vidrio antes de depositarlo para eliminar residuos.\n 
-        Retira tapas y etiquetas antes de reciclar.\n 
-        No incluyas vidrio plano, cerámica o cristal en este contenedor.`}
+        contenido={`Contenedores verdes para vidrio.\nEnjuaga y seca el vidrio antes de depositarlo para eliminar residuos.\nRetira tapas y etiquetas antes de reciclar.\nNo incluyas vidrio plano, cerámica o cristal en este contenedor.`}
         imagenSrc={ContenedorVerdeImagen}
       />
 
       <ContenedorInfo
         titulo="Contenedor Rojo"
-        contenido={`Contenedores rojos para residuos peligrosos como baterías, pilas, aceites o medicamentos.\n  
-        Estos materiales requieren gestión cuidadosa debido a sus características peligrosas.\n  
-        Almacena baterías y pilas sin agujeros o deformidades.\n 
-        Mantener medicamentos separados para evitar reacciones.\n 
-        Recicla aceites no quemados en contenedores específicos.`}
+        contenido={`Contenedores rojos para residuos peligrosos como baterías, pilas, aceites o medicamentos.\nEstos materiales requieren gestión cuidadosa debido a sus características peligrosas.\nAlmacena baterías y pilas sin agujeros o deformidades.\nMantener medicamentos separados para evitar reacciones.\nRecicla aceites no quemados en contenedores específicos.`}
         imagenSrc={ContenedorRojoImagen}
       />
 
       <ContenedorInfo
         titulo="Contenedor Amarillo"
-        contenido={`Contenedores amarillos para plásticos.\n  
-        Lava y seca los envases plásticos antes de depositarlos para eliminar los residuos.\n 
-        Separa tapones y etiquetas antes de reciclar.\n 
-        Evita desechar plásticos no reciclables, como juguetes o utensilios de cocina.`}
+        contenido={`Contenedores amarillos para plásticos.\nLava y seca los envases plásticos antes de depositarlos para eliminar los residuos.\nSepara tapones y etiquetas antes de reciclar.\nEvita desechar plásticos no reciclables, como juguetes o utensilios de cocina.`}
         imagenSrc={ContenedorAmarilloImagen}
       />
 
       <ContenedorInfo
         titulo="Contenedor Gris"
-        contenido={`Contenedores grises para metales.\n  
-        Asegúrate de que los envases metálicos estén limpios y libres de alimentos o residuos.\n 
-        Separa los diferentes tipos de metales, como aluminio y acero, para facilitar el reciclaje.\n 
-        Evita desechar objetos metálicos grandes o contaminados con productos químicos.`}
+        contenido={`Contenedores grises para metales.\nAsegúrate de que los envases metálicos estén limpios y libres de alimentos o residuos.\nSepara los diferentes tipos de metales, como aluminio y acero, para facilitar el reciclaje.\nEvita desechar objetos metálicos grandes o contaminados con productos químicos.`}
         imagenSrc={ContenedorGrisImagen}
       />
 
       <ContenedorInfo
         titulo="Contenedor Naranjo"
-        contenido={`Contenedor para restos de alimentos destinados a compost.\n  
-        Incluye pieles de frutas, espinas de pescado, plantas, cáscaras de huevo y posos.\n  
-        Estos restos se utilizarán para hacer compost, un fertilizante y generador de energía.\n 
-        Separa los restos de alimentos de otros desechos no compostables.\n 
-        No incluyas plásticos, papeles ni materiales no orgánicos en este contenedor.\n 
-        Utiliza el compost producido en jardines o para fertilizar plantas.`}
+        contenido={`Contenedor para restos de alimentos destinados a compost.\nIncluye pieles de frutas, espinas de pescado, plantas, cáscaras de huevo y posos.\nEstos restos se utilizarán para hacer compost, un fertilizante y generador de energía.\nSepara los restos de alimentos de otros desechos no compostables.\nNo incluyas plásticos, papeles ni materiales no orgánicos en este contenedor.\nUtiliza el compost producido en jardines o para fertilizar plantas.`}
         imagenSrc={ContenedorNaranjoImagen}
       />
     <Footer/>
